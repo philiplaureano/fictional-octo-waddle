@@ -12,5 +12,12 @@ namespace Tests
             var result = Formatter.FormatText("<test/>");           
             Assert.Equal(string.Empty, result);           
         }
+
+        [Fact]
+        public void ShouldReturnCorrectValueWhenEnteringEmptyString()
+        {
+            var result = Formatter.FormatText(string.Empty);            
+            Assert.Equal(string.Empty, result);
+        }
     }
 }
